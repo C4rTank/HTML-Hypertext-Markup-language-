@@ -1,0 +1,153 @@
+<!doctype html>
+
+<html>
+
+<head>
+    <style>   
+        .triangle-right {
+            position: fixed;
+            right: 50px;
+            bottom: 50px;
+	        
+            width: 0;
+	        height: 0;
+            transition: all .5s;
+	        
+            border-top: 25px solid transparent;
+	        border-left: 50px solid rgb(0, 0, 0);
+	        border-bottom: 25px solid transparent;
+
+            opacity: 0.75;
+ 
+        }  
+        .triangle-right:hover {
+            transform: scale(1.5);
+            opacity: 1;
+        }
+
+        .triangle-left {
+            position: fixed;
+            bottom: 50px;
+            left: 45px;
+	        
+            width: 0;
+	        height: 0;
+            transition: all .5s;
+	        
+            border-top: 25px solid transparent;
+	        border-right: 50px solid rgb(0, 0, 0);
+	        border-bottom: 25px solid transparent;
+
+            opacity: 0.75;
+ 
+        }  
+        .triangle-left:hover {
+            transform: scale(1.5);
+            opacity: 1;
+        }
+
+        .words {
+            position: fixed;
+            background-color: rgb(221, 143, 143);
+            width: 300px;
+            border: 15px solid rgb(184, 104, 104);
+            padding: 50px;
+            margin: 20px;
+            right: 800px;
+            bottom: 150px;
+            transition: all .5s;
+            animation-name: words_move;
+            animation-duration: 4s;
+            animation-iteration-count: infinite;
+        }
+        .words:hover {
+            transform: scale(1.15);
+            opacity: 1;
+        }
+
+
+
+
+        .letters {
+            text-align: center;
+            font-family: "Papyrus", Times, serif;
+            font-weight: bold;
+        }
+
+        body {
+            background-color: rgb(161, 106, 98);
+                }
+
+        .img {
+            border: 15px solid rgb(184, 104, 104);
+            position: fixed;
+            right: 220px;
+            bottom: 200px;
+            transition: all .5s;
+            animation-name: Movement;
+            animation-duration: 5s;
+            animation-iteration-count: infinite;
+        }
+        
+        .img:hover {
+            transform: scale(1.15);
+            opacity: 1;
+        }
+        @keyframes Movement {
+            0%   {bottom:195px; animation-timing-function: ease-in;}
+            25%  {bottom:205px; animation-timing-function: ease-in-out; rotate:-1deg;}
+            50%  {bottom:195px; animation-timing-function: ease-in;}
+            75%  {bottom:205px; animation-timing-function: ease-in-out; rotate: 1deg;}
+            100% {bottom:195px; animation-timing-function: ease-in;}
+        }
+
+        @keyframes words_move {
+
+            0%   {bottom:95px; animation-timing-function: ease-in;}
+            25%  {bottom:105px; animation-timing-function: ease-in-out; rotate:1deg;}
+            50%  {bottom:95px; animation-timing-function: ease-in;}
+            75%  {bottom:105px; animation-timing-function: ease-in-out; rotate: -1deg;}
+            100% {bottom:95px; animation-timing-function: ease-in;}  
+
+        }
+        
+    </style>     
+</head>
+
+<body>
+
+
+
+<img class ="img" src="unnamed.jpg" alt="unnamed">
+
+
+
+
+    
+    
+<a href="page3.html">
+    <div class="triangle-right"></div>
+</a>
+
+<a href="page1.html">
+    <div class="triangle-left"></div>
+</a>
+
+    <div class="words">
+        <p class="letters">
+            This natural area had natural boundaries. 
+            To the South was the Yellowstone River and to the West was the Rocky Mountains, 
+            as far North as the Saskatchewan River, East to the Cyprus Hills. 
+            
+            Now He knew all the areas and when He put the buffalo on Mother Earth, 
+            He built, 
+            He put everything in twos, the male and female. 
+            So the buffalo had a male and a female. 
+            And to the same area where he molded the different animals, 
+            
+        </p>
+    </div>
+
+</body>
+</html>
+
