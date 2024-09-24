@@ -1,0 +1,99 @@
+<!doctype html>
+
+<html>
+
+<head>
+    <style>
+        h1 {font-size: 75px;}
+        .h1 {
+            text-align: center;
+            font-family: "Papyrus", Times, serif;
+        }
+
+        h2 {font-size: 33px;}
+        .h2 {
+            text-align: center;
+            font-family: "Papyrus", Times, serif;
+        }
+
+        .triangle-right {
+            position: fixed;
+            right: 50px;
+            bottom: 50px;
+	        
+            width: 0;
+	        height: 0;
+            transition: all .5s;
+	        
+            border-top: 25px solid transparent;
+	        border-left: 50px solid rgb(0, 0, 0);
+	        border-bottom: 25px solid transparent;
+
+            opacity: 0.75;
+ 
+        }  
+        .triangle-right:hover {
+            transform: scale(1.5);
+            opacity: 1;
+        }
+
+        body {
+            background-color: rgb(161, 106, 98);
+        }
+
+        .img {
+            border: 15px solid rgb(184, 104, 104);
+            position: fixed;
+            right: 615px;
+            bottom: 120px;
+            transition: all .5s;
+            animation-name: example;
+            animation-duration: 4s;
+            animation-iteration-count: infinite;
+        }
+
+        .img:hover {
+            transform: scale(1.15);
+            opacity: 1;
+        }
+
+        @keyframes example {
+            0%   {left:615px; bottom:115px; animation-timing-function: ease-in;}
+            25%  {left:615px; bottom:125px; animation-timing-function: ease-in-out; rotate:-1deg;}
+            50%  {left:615px; bottom:115px; animation-timing-function: ease-in;}
+            75%  {left:615px; bottom:125px; animation-timing-function: ease-in-out; rotate: 1deg;}
+            100% {left:615px; bottom:115px; animation-timing-function: ease-in;} 
+
+        }
+
+        
+    </style>     
+</head>
+
+<body>
+
+<div class= "h1" >
+    <h1>The Story of Napi the Trickster</h1>
+</div>
+
+<div class= "h2" >
+    <h2>A Blackfoot Legend</h2>
+</div>
+
+
+<img class ="img" src="blackfoot.jpg" alt="Blackfoot">
+
+    
+    
+<a href="page1.html">
+    <div class="triangle-right"></div>
+</a>
+
+</body>
+</html>
+
+
+
+
+
+
